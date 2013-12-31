@@ -5,6 +5,6 @@ An replacement for UIAlertView : block-based, customizable theme, easy to use wi
 
 ## Preview
 
-![DoAlertView Screenshot](https://github.com/donobono/DoAlertView/blob/master/p1.png)
-![DoAlertView Screenshot](https://github.com/donobono/DoAlertView/blob/master/p2.png)
-![DoAlertView Screenshot](https://github.com/donobono/DoAlertView/blob/master/p3.png)
+![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p1.png)
+![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p2.png)
+![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p3.png)
