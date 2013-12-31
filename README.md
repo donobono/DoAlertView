@@ -5,13 +5,13 @@ An replacement for UIAlertView : block-based, customizable theme, easy to use wi
 
 ## Preview
 
-- with title, with yes button, with no button
+# with title, with yes button, with no button
 ![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p1.png)
 
-- without title, with yes button, with no button, with an image, destructive mode
+# without title, with yes button, with no button, with an image, destructive mode
 ![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p2.png)
 
-- without title, with only yes button, with a map
+# without title, with only yes button, with a map
 ![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p3.png)
 
 
@@ -23,6 +23,9 @@ An replacement for UIAlertView : block-based, customizable theme, easy to use wi
 ## Examples
 
 **Code:**
+
+```objc
+
 _vAlert = [[DoAlertView alloc] init];
 // required
 _vAlert.nAnimationType = _sgType.selectedSegmentIndex;	// there are 5 type of animation
@@ -71,6 +74,8 @@ _vAlert.bDestructive = YES;
                 NSLog(@"Done!!!!");
                 
             }];
+
+```
 
 ## Credits
 
