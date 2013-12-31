@@ -5,13 +5,13 @@ An replacement for UIAlertView : block-based, customizable theme, easy to use wi
 
 ## Preview
 
-# with title, with yes button, with no button
+### with title, with yes button, with no button
 ![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p1.png)
 
-# without title, with yes button, with no button, with an image, destructive mode
+### without title, with yes button, with no button, with an image, destructive mode
 ![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p2.png)
 
-# without title, with only yes button, with a map
+### without title, with only yes button, with a map
 ![DoAlertView Screenshot](https://raw.github.com/donobono/DoAlertView/master/p3.png)
 
 
@@ -74,6 +74,25 @@ _vAlert.bDestructive = YES;
                 NSLog(@"Done!!!!");
                 
             }];
+
+```
+
+```objc
+// customizable theme
+#define DO_TITLE_BOX                DO_RGB(218, 247, 244)
+#define DO_NORMAL_BOX               DO_RGB(255, 255, 255)
+#define DO_BUTTON_BOX               DO_RGB(13, 52, 85)
+#define DO_DESTRUCTIVE_BOX          DO_RGB(236, 90, 73)
+#define DO_TEXT_COLOR               DO_RGB(13, 52, 85)
+#define DO_DESTRUCTIVE_TEXT_COLOR   DO_RGB(255, 255, 255)
+#define DO_DIMMED_COLOR             DO_RGBA(0, 0, 0, 0.7)
+
+#define DO_TEXT_FONT        [UIFont fontWithName:@"Avenir-Medium" size:14]
+#define DO_BOLD_FONT        [UIFont fontWithName:@"Avenir-Heavy" size:14]
+
+#define DO_LABEL_INSET      UIEdgeInsetsMake(10, 10, 10, 10)
+#define DO_TITLE_INSET      UIEdgeInsetsMake(5, 10, 5, 10)
+#define DO_VIEW_WIDTH       280
 
 ```
 
