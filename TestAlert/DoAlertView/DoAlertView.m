@@ -134,9 +134,6 @@
 
 - (void)hideAlert
 {
-    if (_doDone != nil)
-        _doDone(self);
-    
     _nTag = DO_YES_TAG;
     [self hideAnimation];
 }
@@ -260,16 +257,6 @@
 - (void)buttonTarget:(id)sender
 {
     _nTag = (int)[sender tag];
-    
-    if (_nTag == DO_YES_TAG)
-    {
-        _doYes(self);
-        [self hideAnimation];
-
-        return;
-    }
-    
-    _doNo(self);
     [self hideAnimation];
 }
 
@@ -359,6 +346,16 @@
 
 - (void)hideAlertView
 {
+    if (_doDone != nil)
+        _doDone(self);
+    else
+    {
+        if (_nTag == DO_YES_TAG)
+            _doYes(self);
+        else
+            _doNo(self);
+    }
+    
     [self removeFromSuperview];
     [_alertWindow removeFromSuperview];
     _alertWindow = nil;
