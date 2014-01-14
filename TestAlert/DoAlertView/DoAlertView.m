@@ -26,6 +26,11 @@
     self.view = _alertView;
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return [UIApplication sharedApplication].statusBarStyle;
+}
+
 @end
 
 
