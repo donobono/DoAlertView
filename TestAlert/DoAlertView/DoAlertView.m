@@ -304,7 +304,10 @@
             [vBody addSubview:vMap];
             dContentOffset = 180 + DO_LABEL_INSET.bottom;
 
-//            [vMap showAnnotations:@[pointRavens,pointSteelers,pointBengals, pointBrowns] animated:YES];
+            MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+            annotation.coordinate = vMap.centerCoordinate;
+            annotation.title = @"Here~";
+            [vMap addAnnotation:annotation];
         }
             break;
 
